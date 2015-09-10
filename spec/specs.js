@@ -16,6 +16,6 @@ describe('countUp', function() {
     });
 
     it("if multiple or maxNum is 0 then it returns an error message", function() {
-        expect(countUp(0,30)).to.eql(["0 doesn't work!"]);
+        expect(countUp(0,30)).to.eql(["Positive integers only please!"]);
     });
 });

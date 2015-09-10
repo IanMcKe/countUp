@@ -1,6 +1,6 @@
 var countUp = function(multiple, maxNum) {
     var countArray = [];
-    if ((multiple !== 0) && (maxNum !== 0)) {
+    if ((multiple > 0) && (maxNum > 0)) {
         if (multiple > maxNum) {
             var holding = multiple;
             multiple = maxNum;
@@ -11,7 +11,7 @@ var countUp = function(multiple, maxNum) {
             countArray.push(i);
         }
     } else {
-        countArray.push("0 doesn't work!");
+        countArray.push("Positive integers only please!");
     }
          return countArray;
 };

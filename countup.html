@@ -8,13 +8,15 @@
     </head>
     <body>
         <div class="container">
-            <h1>Count Up!</h1>
+            <h1 class="text-center">Count Up!</h1>
             <form id="numbers">
                 <div class="form-group">
-                    <input id="maxNum" type="number"class="form-control" placeholder="Enter your maximum number:" required>
-                    <input id="multiple" type="number" class="form-control" placeholder="Enter what you would want to count:" required>
-                    <button type="submit" class="btn btn-primary">Count Up!!!!!!!!!!!!!</button>
+                    <label for="maxNum">Enter your maximum number:</label>
+                    <input id="maxNum" type="number"class="form-control" required>
+                    <label for="multiple">Enter what you would want to count:</label>
+                    <input id="multiple" type="number" class="form-control" required>
                 </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Count Up!!!!!!!!!!!!!</button>
             </form>
 
             <h4><span class="countUp"></span></h4>
